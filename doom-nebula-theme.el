@@ -217,6 +217,8 @@
    (org-level-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground yellow)
    (org-level-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground orange)
 
+   (+org-todo-project :inherit '(bold org-todo) :foreground teal)
+
    (org-hide :foreground hidden)
    (solaire-org-hide-face :foreground hidden-alt)
 
