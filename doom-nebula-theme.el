@@ -1,7 +1,8 @@
 ;; doom-nebula-theme.el --- inspired from the doom one and modus themes -*- no-byte-compile: t; -*-
+;;; Commentary:
 (require 'doom-themes)
 
-;;
+;;; Code:
 (defgroup doom-nebula-theme nil
   "Options for doom-themes"
   :group 'doom-themes)
@@ -12,14 +13,14 @@
   :type 'boolean)
 
 (defcustom doom-nebula-padded-modeline doom-themes-padded-modeline
-  "If non-nil, adds a 4px padding to the mode-line. Can be an integer to
-determine the exact padding."
+  "If non-nil, adds a 4px padding to the mode-line."
   :group 'doom-nebula-theme
   :type '(choice integer boolean))
 
 (def-doom-theme doom-nebula
   "A dark theme based off of doom-one with more vibrant colors."
 
+;; name           gui       256       16
   ((bg         '("#101114" nil       nil))
    (bg-alt     '("#14161a" nil       nil))
    (base0      '("#181a1f" "#101010" "black"        ))
@@ -59,10 +60,14 @@ determine the exact padding."
    (constants      magenta)
    (functions      violet)
    (keywords       blue)
+   ;; Not sure what color to use on methods as I can't find a programming mode
+   ;; that uses this face.
    ;; (methods        violet)
    (methods        dark-cyan)
-   (operators      red)
+   ;; Not sure what color to use on operators as I can't find a programming mode
+   ;; that uses this face.
    ;; (operators      blue)
+   (operators      red)
    (type           cyan)
    (strings        green)
    (variables      base8)
@@ -197,7 +202,6 @@ determine the exact padding."
    (markdown-header-face :inherit 'bold :foreground red)
 
    ;; org-mode
-
    (org-block                    :background base1 :extend t)
    (org-block-background         :background base1 :extend t)
    (org-block-begin-line         :foreground comments :background base1 :extend t)
@@ -241,7 +245,6 @@ determine the exact padding."
    (treemacs-directory-face :foreground violet)
 
    (writegood-passive-voice-face :underline `(:style wave :color ,teal))
-
    )
 
   ;; --- extra variables --------------------
