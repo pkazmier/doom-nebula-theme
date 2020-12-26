@@ -8,19 +8,19 @@ Copy the `doom-nebula-theme.el` file into your `$HOME/.doom.d/themes` directory.
 Below are a handful of screenshots with the modes I use most.
 
 ### OrgAgenda
-![Agenda](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/agenda.png?raw=true)
+![Agenda](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/agenda.jpg?raw=true)
 
 ### Elisp
-![Elisp](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/elisp.png?raw=true)
+![Elisp](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/elisp.jpg?raw=true)
 
 ### OrgMode
-![OrgMode](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/orgmode.png?raw=true)
+![OrgMode](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/orgmode.jpg?raw=true)
 
 ### Racket
-![Racket](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/racket.png?raw=true)
+![Racket](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/racket.jpg?raw=true)
 
 ### Python
-![Python](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/python.png?raw=true)
+![Python](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/python.jpg?raw=true)
 
 ### GoLang
-![GoLang](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/golang.png?raw=true)
+![GoLang](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/golang.jpg?raw=true)
