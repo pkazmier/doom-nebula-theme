@@ -103,8 +103,6 @@
 
   ;; --- extra faces ------------------------
   (((all-the-icons-dblue &override) :foreground dark-cyan)
-   (centaur-tabs-unselected :background bg-alt :foreground base6)
-   (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
 
    (font-lock-comment-face :foreground comments)
    (font-lock-doc-face :inherit 'font-lock-comment-face :foreground doc-comments)
