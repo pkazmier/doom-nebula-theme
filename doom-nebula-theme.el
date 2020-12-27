@@ -32,7 +32,7 @@
    (base6      '("#757a82" "#7b7b7b" "brightblack"  ))
    (base7      '("#9ca2ad" "#979797" "brightblack"  ))
    (base8      '("#FFFFFF" "#dfdfdf" "white"        ))
-   (fg         '("#bbc2cf" "#bfbfbf" ))
+   (fg         '("#cbd2df" "#bfbfbf" ))
    (fg-alt     '("#5e6269" "#5d5d5d" ))
 
    (grey       base4)
@@ -133,6 +133,18 @@
     :background modeline-bg-inactive-l
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))
 
+   ;; helpful
+   (helpful-heading :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.20 :weight 'ultra-light :foreground cyan)
+
+   ;; links & info
+   (link-visited :foreground comments)
+   (info-menu-star :foreground magenta)
+   (info-menu-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.10 :weight 'ultra-light :foreground cyan)
+   (info-title-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.33 :weight 'ultra-light :foreground dark-cyan)
+   (info-title-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.27 :weight 'ultra-light :foreground teal)
+   (info-title-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.21 :weight 'ultra-light :foreground violet)
+   (info-title-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.15 :weight 'ultra-light :foreground magenta)
+
    ;; highlight
    (lazy-highlight :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
    (lsp-face-highlight-textual :underline base8 :weight 'bold)
@@ -225,12 +237,13 @@
    (org-agenda-structure :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight 'ultra-light :height 1.5 :foreground blue)
    (org-super-agenda-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight 'ultra-light :height 1.2 :foreground dark-cyan)
    (org-agenda-date :foreground violet)
-   (org-agenda-date-weekend :foreground dark-cyan)
+   (org-agenda-date-weekend :foreground magenta)
    (org-agenda-date-today :foreground base8 :underline t :weight 'bold)
    (org-scheduled :foreground comments)
    (org-scheduled-today :foreground fg)
-   (org-scheduled-previously :foreground orange)
-   (org-upcoming-deadline :foreground base6)
+   (org-warning :foreground dark-cyan)
+   (org-scheduled-previously :foreground dark-cyan)
+   (org-upcoming-deadline :foreground dark-cyan)
 
    ;; Racket
    (racket-selfeval-face :foreground teal)
