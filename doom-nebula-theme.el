@@ -234,7 +234,7 @@
 
    ;; org-agenda
    (org-date :foreground base6)
-   (org-agenda-structure :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight 'ultra-light :height 1.5 :foreground blue)
+   (org-agenda-structure :foreground highlight)
    (org-super-agenda-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight 'ultra-light :height 1.2 :foreground dark-cyan)
    (org-agenda-date :foreground violet)
    (org-agenda-date-weekend :foreground magenta)
