@@ -36,7 +36,7 @@
    (fg-alt     '("#5e6269" "#5d5d5d" ))
 
    (grey       base4)
-   (red        '("#ff5c5c" "#ff6655" ))
+   (red        '("#ff6c6b" "#ff6655" ))
    (orange     '("#e69055" "#dd8844" ))
    (green      '("#7bc275" "#99bb66" ))
    (yellow     '("#FCCE7B"           ))
