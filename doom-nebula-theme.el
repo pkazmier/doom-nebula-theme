@@ -175,6 +175,9 @@
    (markdown-header-face-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground yellow)
    ((markdown-code-face &override) :background base1)
 
+   ;; mu4e
+   (mu4e-header-highlight-face :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan   0.3) :weight 'bold))
+
    ;; snipe
    (evil-snipe-first-match-face :foreground highlight :background dark-blue :weight 'bold)
    (evil-snipe-matches-face :background (doom-darken dark-cyan 0.5) :foreground (doom-lighten green 0.6) :weight 'bold)
