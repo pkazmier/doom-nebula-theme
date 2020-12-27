@@ -176,7 +176,7 @@
    ((markdown-code-face &override) :background base1)
 
    ;; mu4e
-   (mu4e-header-highlight-face :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan   0.3) :weight 'bold))
+   (mu4e-header-highlight-face :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan   0.3) :weight 'bold)
 
    ;; snipe
    (evil-snipe-first-match-face :foreground highlight :background dark-blue :weight 'bold)
