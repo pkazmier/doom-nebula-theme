@@ -188,14 +188,14 @@
    (ivy-posframe-border :background fg-alt)
 
    (ivy-current-match :background selection :foreground base8 :weight 'bold)
-   (ivy-minibuffer-match-face-1 :background base3 :foreground comments)
+   (ivy-minibuffer-match-face-1 :background base3 :foreground comments :weight 'bold)
    (ivy-minibuffer-match-face-2 :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan   0.3) :weight 'bold)
    (ivy-minibuffer-match-face-3 :background (doom-darken magenta   0.5) :foreground (doom-lighten violet 0.7) :weight 'bold)
    (ivy-minibuffer-match-face-4 :background (doom-darken dark-cyan 0.5) :foreground (doom-lighten green  0.6) :weight 'bold)
 
    ;; swiper
    (swiper-line-face :background selection :foreground base8 :weight 'bold)
-   (swiper-match-face-1 :background base3 :foreground base8 :weight 'normal)
+   (swiper-match-face-1 :background base3 :foreground base8 :weight 'bold)
    (swiper-match-face-2 :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
    (swiper-match-face-3 :background (doom-darken magenta   0.5) :foreground (doom-lighten violet 0.7) :weight 'bold)
    (swiper-match-face-4 :background (doom-darken dark-cyan 0.5) :foreground (doom-lighten green  0.6) :weight 'bold)
