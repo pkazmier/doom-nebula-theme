@@ -245,9 +245,9 @@
    (org-agenda-date-today :foreground base8 :underline t :weight 'bold)
    (org-scheduled :foreground comments)
    (org-scheduled-today :foreground fg)
-   (org-warning :foreground dark-cyan)
-   (org-scheduled-previously :foreground dark-cyan)
-   (org-upcoming-deadline :foreground dark-cyan)
+   (org-warning :foreground cyan)
+   (org-scheduled-previously :foreground cyan)
+   (org-upcoming-deadline :foreground cyan)
 
    ;; Racket
    (racket-selfeval-face :foreground teal)
