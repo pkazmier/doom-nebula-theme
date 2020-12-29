@@ -251,6 +251,7 @@
 
    ;; Racket
    (racket-selfeval-face :foreground cyan)
+   (racket-keyword-argument-face :foreground teal)
 
    ;; Spull-fu
    (spell-fu-incorrect-face :underline `(:style wave :color ,red))
