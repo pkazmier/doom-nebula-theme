@@ -4,6 +4,8 @@ Doom Emacs theme based on `doom-vibrant` theme with influence from the Modus the
 ## Installation
 Copy the `doom-nebula-theme.el` file into your `$HOME/.doom.d/themes` directory.
 
+I also created a splash image, `nebula.png`, for the theme if you want to jazz up your Doom Emacs.
+
 ## Screenshots
 Below are a handful of screenshots with the modes I use most.
 
