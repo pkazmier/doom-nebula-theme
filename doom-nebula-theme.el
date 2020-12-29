@@ -250,7 +250,7 @@
    (org-upcoming-deadline :foreground cyan)
 
    ;; Racket
-   (racket-selfeval-face :foreground teal)
+   (racket-selfeval-face :foreground cyan)
 
    ;; Spull-fu
    (spell-fu-incorrect-face :underline `(:style wave :color ,red))
