@@ -2,9 +2,20 @@
 Doom Emacs theme based on `doom-vibrant` theme with influence from the Modus themes.
 
 ## Installation
-Copy the `doom-nebula-theme.el` file into your `$HOME/.doom.d/themes` directory.
+Copy the `doom-nebula-theme.el` and `nebula.png` file into your `$HOME/.doom.d/themes` directory.
+Add the following lines to your `~/.doom.d/config.el`:
 
-I also created a splash image, `nebula.png`, for the theme if you want to jazz up your Doom Emacs.
+```elisp
+;; Font settings
+(setq doom-font (font-spec :family "Iosevka" :size 14)
+      doom-big-font (font-spec :family "Iosevka" :size 20)
+      doom-variable-pitch-font (font-spec :family "Iosevka Etoile" :size 12))
+
+;; Theme settings
+(setq doom-theme 'doom-nebula
+      fancy-splash-image (concat doom-private-dir "themes/nebula.png"))
+
+```
 
 ## Screenshots
 Below are a handful of screenshots with the modes I use most.
