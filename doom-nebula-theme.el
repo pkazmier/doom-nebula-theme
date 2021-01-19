@@ -105,7 +105,7 @@
   (((all-the-icons-dblue &override) :foreground dark-cyan)
 
    (font-lock-comment-face :foreground comments)
-   (font-lock-doc-face :inherit 'font-lock-comment-face :foreground doc-comments)
+   (font-lock-doc-face :inherit 'font-lock-comment-face :slant 'normal :foreground doc-comments)
 
    ;; I didn't like the background on non-active lines as it competes with the
    ;; window borders, which are designed to be very clear.
