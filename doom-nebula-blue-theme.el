@@ -184,7 +184,7 @@
    (evil-snipe-matches-face :background (doom-darken dark-cyan 0.5) :foreground (doom-lighten green 0.6) :weight 'bold)
 
    ;; ivy-mode
-   (ivy-posframe :background base2)
+   (ivy-posframe :background base3)
    (ivy-posframe-border :background fg-alt)
 
    (ivy-current-match :background selection :foreground base8 :weight 'bold)
