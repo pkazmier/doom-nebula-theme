@@ -195,10 +195,11 @@
 
    ;; swiper
    (swiper-line-face :background selection :foreground base8 :weight 'bold)
-   (swiper-match-face-1 :background base3 :foreground base8 :weight 'bold)
-   (swiper-match-face-2 :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
-   (swiper-match-face-3 :background (doom-darken magenta   0.5) :foreground (doom-lighten violet 0.7) :weight 'bold)
-   (swiper-match-face-4 :background (doom-darken dark-cyan 0.5) :foreground (doom-lighten green  0.6) :weight 'bold)
+   (swiper-match-face-1 :foreground base8 :weight 'bold)
+   (swiper-match-face-2 :foreground (doom-lighten cyan 0.3) :weight 'bold)
+   (swiper-match-face-3 :foreground (doom-lighten violet 0.7) :weight 'bold)
+   (swiper-match-face-4 :foreground (doom-lighten green  0.6) :weight 'bold)
+
    (swiper-background-match-face-1 :background base3 :foreground comments)
    (swiper-background-match-face-2 :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
    (swiper-background-match-face-3 :background (doom-darken magenta   0.5) :foreground (doom-lighten violet 0.7) :weight 'bold)
