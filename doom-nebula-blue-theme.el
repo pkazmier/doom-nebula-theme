@@ -219,6 +219,7 @@
    ;; org-mode
    (org-block                    :background base1 :extend t)
    (org-block-background         :background base1 :extend t)
+   (org-meta-line                :inherit 'shadow)
    (org-block-begin-line         :foreground comments :background base1 :extend t)
 
    (org-document-info :foreground violet)
