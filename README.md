@@ -8,9 +8,9 @@ your `~/.doom.d/config.el`:
 
 ```elisp
 ;; Font settings
-(setq doom-font (font-spec :family "Iosevka" :size 14)
-      doom-big-font (font-spec :family "Iosevka" :size 20)
-      doom-variable-pitch-font (font-spec :family "Iosevka Etoile" :size 12))
+(setq doom-font (font-spec :family "MonoLisa" :weight 'normal :size 13)
+      doom-big-font (font-spec :family "MonoLisa" :weight 'normal :size 17)
+      doom-variable-pitch-font (font-spec :family "Iosevka Etoile" :size 13))
 
 ;; Theme settings
 (setq doom-theme 'doom-nebula  ; or doom-nebula-blue
@@ -19,7 +19,9 @@ your `~/.doom.d/config.el`:
 ```
 
 ## Screenshots
-Below are a handful of screenshots with the modes I use most in both color variants:
+Below are a handful of screenshots with the modes I use most in both color
+variants.  The body font used in the screenshots is
+[MonoLisa](https://www.monolisa.dev)---my new favorite font.
 
 ### OrgAgenda
 ![Agenda](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/agenda.png?raw=true)
