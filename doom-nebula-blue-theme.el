@@ -106,6 +106,7 @@
 
    (font-lock-comment-face :foreground comments)
    (font-lock-doc-face :inherit 'font-lock-comment-face :slant 'normal :foreground doc-comments)
+   (font-lock-preprocessor-face :foreground dark-cyan)
 
    ;; I didn't like the background on non-active lines as it competes with the
    ;; window borders, which are designed to be very clear.
