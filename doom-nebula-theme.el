@@ -17,6 +17,16 @@
   :group 'doom-nebula-theme
   :type '(choice integer boolean))
 
+(defcustom doom-nebula-variable-font-weight 'normal
+  "If non-nil, weight to style the variable font."
+  :group 'doom-nebula-theme
+  :type 'symbol)
+
+(defcustom doom-nebula-variable-font-height-multiplier 1.0
+  "If non-nil, multiplier when computing the height of the variable font."
+  :group 'doom-nebula-theme
+  :type 'float)
+
 (def-doom-theme doom-nebula
   "A dark theme based off of doom-one with more vibrant colors."
 
@@ -135,16 +145,16 @@
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))
 
    ;; helpful
-   (helpful-heading :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.20 :weight 'ultra-light :foreground cyan)
+   (helpful-heading :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.20) :weight doom-nebula-variable-font-weight :foreground cyan)
 
    ;; links & info
    (link-visited :foreground comments)
    (info-menu-star :foreground magenta)
-   (info-menu-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.10 :weight 'ultra-light :foreground cyan)
-   (info-title-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.33 :weight 'ultra-light :foreground dark-cyan)
-   (info-title-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.27 :weight 'ultra-light :foreground teal)
-   (info-title-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.21 :weight 'ultra-light :foreground violet)
-   (info-title-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.15 :weight 'ultra-light :foreground magenta)
+   (info-menu-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.20) :weight doom-nebula-variable-font-weight :foreground cyan)
+   (info-title-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.33) :weight doom-nebula-variable-font-weight :foreground dark-cyan)
+   (info-title-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.27) :weight doom-nebula-variable-font-weight :foreground teal)
+   (info-title-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.21) :weight doom-nebula-variable-font-weight :foreground violet)
+   (info-title-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.15) :weight doom-nebula-variable-font-weight :foreground magenta)
 
    ;; highlight
    (lazy-highlight :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
@@ -166,14 +176,14 @@
    (markdown-list-face :foreground blue)
    (markdown-markup-face :foreground base5)
    (markdown-header-delimiter-face :family (format "%s" (font-get doom-variable-pitch-font :family)) :foreground comments)
-   (markdown-header-face-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.5 :weight 'ultra-light :foreground blue)
-   (markdown-header-face-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.33 :weight 'ultra-light :foreground dark-cyan)
-   (markdown-header-face-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.27 :weight 'ultra-light :foreground teal)
-   (markdown-header-face-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.21 :weight 'ultra-light :foreground violet)
-   (markdown-header-face-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.15 :weight 'ultra-light :foreground magenta)
-   (markdown-header-face-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.1  :weight 'ultra-light :foreground cyan)
-   (markdown-header-face-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground green)
-   (markdown-header-face-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground yellow)
+   (markdown-header-face-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.5) :weight doom-nebula-variable-font-weight :foreground blue)
+   (markdown-header-face-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.33) :weight doom-nebula-variable-font-weight :foreground dark-cyan)
+   (markdown-header-face-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.27) :weight doom-nebula-variable-font-weight :foreground teal)
+   (markdown-header-face-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.21) :weight doom-nebula-variable-font-weight :foreground violet)
+   (markdown-header-face-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.15) :weight doom-nebula-variable-font-weight :foreground magenta)
+   (markdown-header-face-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.1)  :weight doom-nebula-variable-font-weight :foreground cyan)
+   (markdown-header-face-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.0)  :weight doom-nebula-variable-font-weight :foreground green)
+   (markdown-header-face-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.0)  :weight doom-nebula-variable-font-weight :foreground yellow)
    ((markdown-code-face &override) :background base1)
 
    ;; mu4e
@@ -224,15 +234,15 @@
    (org-block-begin-line         :foreground comments :background base1 :extend t)
 
    (org-document-info :foreground violet)
-   (org-document-title :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.5 :weight 'ultra-light :foreground blue)
-   (org-level-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.33 :weight 'ultra-light :foreground dark-cyan)
-   (org-level-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.27 :weight 'ultra-light :foreground teal)
-   (org-level-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.21 :weight 'ultra-light :foreground violet)
-   (org-level-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.15 :weight 'ultra-light :foreground magenta)
-   (org-level-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.1  :weight 'ultra-light :foreground cyan)
-   (org-level-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground green)
-   (org-level-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground yellow)
-   (org-level-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height 1.0  :weight 'ultra-light :foreground orange)
+   (org-document-title :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.5) :weight doom-nebula-variable-font-weight :foreground blue)
+   (org-level-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.33) :weight doom-nebula-variable-font-weight :foreground dark-cyan)
+   (org-level-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.27) :weight doom-nebula-variable-font-weight :foreground teal)
+   (org-level-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.21) :weight doom-nebula-variable-font-weight :foreground violet)
+   (org-level-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.15) :weight doom-nebula-variable-font-weight :foreground magenta)
+   (org-level-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.1)  :weight doom-nebula-variable-font-weight :foreground cyan)
+   (org-level-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.0)  :weight doom-nebula-variable-font-weight :foreground green)
+   (org-level-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.0)  :weight doom-nebula-variable-font-weight :foreground yellow)
+   (org-level-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-variable-font-height-multiplier 1.0)  :weight doom-nebula-variable-font-weight :foreground orange)
 
    (+org-todo-project :inherit '(bold org-todo) :foreground teal)
 
@@ -242,7 +252,7 @@
    ;; org-agenda
    (org-date :foreground base6)
    (org-agenda-structure :foreground highlight)
-   (org-super-agenda-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight 'ultra-light :height 1.2 :foreground dark-cyan)
+   (org-super-agenda-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight doom-nebula-variable-font-weight :height (* doom-nebula-variable-font-height-multiplier 1.2) :foreground dark-cyan)
    (org-agenda-date :foreground violet)
    (org-agenda-date-weekend :foreground magenta)
    (org-agenda-date-today :foreground base8 :underline t :weight 'bold)
@@ -260,8 +270,8 @@
    (spell-fu-incorrect-face :underline `(:style wave :color ,red))
 
    ;; Treemacs
-   (treemacs-root-face :foreground highlight :weight 'ultra-bold :height 1.2)
-   (doom-themes-treemacs-root-face :foreground highlight :weight 'ultra-bold :height 1.2)
+   (treemacs-root-face :foreground highlight :weight 'ultra-bold :height (* doom-nebula-variable-font-height-multiplier 1.2))
+   (doom-themes-treemacs-root-face :foreground highlight :weight 'ultra-bold :height (* doom-nebula-variable-font-height-multiplier 1.2))
    (doom-themes-treemacs-file-face :foreground dark-cyan)
    (treemacs-directory-face :foreground violet)
 

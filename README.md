@@ -14,6 +14,8 @@ your `~/.doom.d/config.el`:
 
 ;; Theme settings
 (setq doom-theme 'doom-nebula  ; or doom-nebula-blue
+      doom-nebula-variable-font-weight 'ultra-light
+      doom-nebula-variable-font-height-multiplier 1.0
       fancy-splash-image (concat doom-private-dir "themes/nebula.png"))
 
 ```
