@@ -17,18 +17,18 @@
   :group 'doom-nebula-blue-theme
   :type '(choice integer boolean))
 
-(defcustom doom-nebula-blue-variable-font-weight 'normal
-  "If non-nil, weight to style the variable font."
+(defcustom doom-nebula-blue-variable-font-weight 'light
+  "If non-nil, weight used to style variable pitch headings."
   :group 'doom-nebula-blue-theme
   :type 'symbol)
 
-(defcustom doom-nebula-blue-variable-font-height-multiplier 1.0
-  "If non-nil, multiplier when computing the height of the variable font."
+(defcustom doom-nebula-blue-variable-font-height-multiplier 1.1
+  "If non-nil, height multiplier used to style variable pitch headings."
   :group 'doom-nebula-blue-theme
   :type 'float)
 
 (def-doom-theme doom-nebula-blue
-  "A dark theme based off of doom-one with more vibrant colors."
+  "A dark blue theme based on doom-one and modus themes."
 
 ;; name           gui       256       16
   ((bg         '("#001627" nil       nil))
@@ -145,16 +145,16 @@
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))
 
    ;; helpful
-   (helpful-heading :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.20) :weight doom-nebula-blue-variable-font-weight :foreground cyan)
+   (helpful-heading :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.20) :weight doom-nebula-blue-variable-font-weight :foreground cyan)
 
    ;; links & info
    (link-visited :foreground comments)
    (info-menu-star :foreground magenta)
-   (info-menu-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.20) :weight doom-nebula-blue-variable-font-weight :foreground cyan)
-   (info-title-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
-   (info-title-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
-   (info-title-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
-   (info-title-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
+   (info-menu-header :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.20) :weight doom-nebula-blue-variable-font-weight :foreground cyan)
+   (info-title-1 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
+   (info-title-2 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
+   (info-title-3 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
+   (info-title-4 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
 
    ;; highlight
    (lazy-highlight :background (doom-darken dark-blue 0.2) :foreground (doom-lighten cyan 0.3) :weight 'bold)
@@ -175,15 +175,15 @@
    ;; markdown
    (markdown-list-face :foreground blue)
    (markdown-markup-face :foreground base5)
-   (markdown-header-delimiter-face :family (format "%s" (font-get doom-variable-pitch-font :family)) :foreground comments)
-   (markdown-header-face-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.5) :weight doom-nebula-blue-variable-font-weight :foreground blue)
-   (markdown-header-face-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
-   (markdown-header-face-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
-   (markdown-header-face-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
-   (markdown-header-face-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
-   (markdown-header-face-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.1)  :weight doom-nebula-blue-variable-font-weight :foreground cyan)
-   (markdown-header-face-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground green)
-   (markdown-header-face-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground yellow)
+   (markdown-header-delimiter-face :inherit 'variable-pitch :foreground comments)
+   (markdown-header-face-1 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.5) :weight doom-nebula-blue-variable-font-weight :foreground blue)
+   (markdown-header-face-2 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
+   (markdown-header-face-3 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
+   (markdown-header-face-4 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
+   (markdown-header-face-5 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
+   (markdown-header-face-6 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.1)  :weight doom-nebula-blue-variable-font-weight :foreground cyan)
+   (markdown-header-face-7 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground green)
+   (markdown-header-face-8 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground yellow)
    ((markdown-code-face &override) :background base1)
 
    ;; mu4e
@@ -234,15 +234,15 @@
    (org-block-begin-line         :foreground comments :background base1 :extend t)
 
    (org-document-info :foreground violet)
-   (org-document-title :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.5) :weight doom-nebula-blue-variable-font-weight :foreground blue)
-   (org-level-1 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
-   (org-level-2 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
-   (org-level-3 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
-   (org-level-4 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
-   (org-level-5 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.1)  :weight doom-nebula-blue-variable-font-weight :foreground cyan)
-   (org-level-6 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground green)
-   (org-level-7 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground yellow)
-   (org-level-8 :family (format "%s" (font-get doom-variable-pitch-font :family)) :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground orange)
+   (org-document-title :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.5) :weight doom-nebula-blue-variable-font-weight :foreground blue)
+   (org-level-1 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.33) :weight doom-nebula-blue-variable-font-weight :foreground dark-cyan)
+   (org-level-2 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.27) :weight doom-nebula-blue-variable-font-weight :foreground teal)
+   (org-level-3 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.21) :weight doom-nebula-blue-variable-font-weight :foreground violet)
+   (org-level-4 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.15) :weight doom-nebula-blue-variable-font-weight :foreground magenta)
+   (org-level-5 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.1)  :weight doom-nebula-blue-variable-font-weight :foreground cyan)
+   (org-level-6 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground green)
+   (org-level-7 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground yellow)
+   (org-level-8 :inherit 'variable-pitch :height (* doom-nebula-blue-variable-font-height-multiplier 1.0)  :weight doom-nebula-blue-variable-font-weight :foreground orange)
 
    (+org-todo-project :inherit '(bold org-todo) :foreground teal)
 
@@ -252,7 +252,7 @@
    ;; org-agenda
    (org-date :foreground base6)
    (org-agenda-structure :foreground highlight)
-   (org-super-agenda-header :family (format "%s" (font-get doom-variable-pitch-font :family)) :weight doom-nebula-blue-variable-font-weight :height (* doom-nebula-blue-variable-font-height-multiplier 1.2) :foreground dark-cyan)
+   (org-super-agenda-header :inherit 'variable-pitch :weight doom-nebula-blue-variable-font-weight :height (* doom-nebula-blue-variable-font-height-multiplier 1.2) :foreground dark-cyan)
    (org-agenda-date :foreground violet)
    (org-agenda-date-weekend :foreground magenta)
    (org-agenda-date-today :foreground base8 :underline t :weight 'bold)
