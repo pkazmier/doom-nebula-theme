@@ -12,10 +12,10 @@ your `~/.doom.d/config.el`:
 
 ```elisp
 ;; If you like the font in the screenshots, add these settings
-(setq-default line-spacing 0.2)
-(setq doom-font (font-spec :family "IBM Plex Mono Text" :size 12)
-      doom-big-font (font-spec :family "IBM Plex Mono Text" :size 16)
-      doom-variable-pitch-font (font-spec :family "IBM Plex Sans" :size 13)
+(setq-default line-spacing nil)
+(setq doom-font (font-spec :family "Ellograph CF" :size 12)
+      doom-big-font (font-spec :family "Ellograph CF" :size 18)
+      doom-variable-pitch-font (font-spec :family "Source Sans Pro" :size 13)
       doom-font-increment 1)
 
 ;; Theme settings
@@ -26,8 +26,7 @@ your `~/.doom.d/config.el`:
 
 ## Screenshots
 Below are a handful of screenshots with the modes I use most in both color
-variants.  The font used in the screenshots is [IBM
-Plex](https://www.ibm.com/plex/)--my new favorite font.
+variants.  The font used in the screenshots is [Ellograph](https://connary.com/ellograph.html)--my new favorite font.
 
 ### Agenda
 ![Agenda](https://github.com/pkazmier/doom-nebula-theme/blob/main/screenshots/agenda.png?raw=true)
